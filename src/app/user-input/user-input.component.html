@@ -1,0 +1,22 @@
+ <form>
+    <div class="input-group">
+        <div>
+    <label >Initial Investment</label>
+    <input type="number" name="II" [(ngModel)]="InitialInvestment" >
+    </div>
+    <div>
+    <label >Annual Investment</label>
+    <input type="number"  name="AI" [(ngModel)]="AnnualInvestment">
+    </div>
+      <div>
+    <label >Expected return</label>
+    <input type="number" name="ER" [(ngModel)]="Expectedreturn" >
+    </div>
+      <div>
+    <label >Duration</label>
+    <input type="number"  name="D"[(ngModel)]="Duration" >
+    </div>
+    
+    </div>
+     <button  type="button" (click)="onCalculate()">calculate</button>
+ </form>
